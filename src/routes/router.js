@@ -8,7 +8,12 @@ const routes = [
     component: LoginUser
   },
   {
-    path: '/err',
+    path: '/e404',
+    name: 'error',
+    component: ErrorScreen
+  },
+  {
+    path: '/report',
     name: 'error',
     component: ErrorScreen
   }
