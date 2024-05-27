@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import LoginUser from "../page/Login.vue"
 import ErrorScreen from "../page/Error404.vue"
 import InventoryPage from "../page/Inventory.vue" 
-import BoardSide from '../page/BoardSide.vue';
+import BoardSide from '../page/BoardSide.vue'
 
 const routes = [
   {
