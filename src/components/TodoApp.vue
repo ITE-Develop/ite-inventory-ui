@@ -1,5 +1,6 @@
 <template>
-    <div class="padding Center">
+     <div class="flex items-center justify-center min-h-screen">
+
         <div class="w-full max-w-md btn-center">
       <h1 class="text-3xl font-bold mb-4">Todo App</h1>
       <input type="text" v-model="newTask" @keyup.enter="addTask" placeholder="Enter a new Item" class="w-full border p-2 rounded mb-4">
@@ -7,7 +8,7 @@
       <ul id="list-container">    
             <li v-for="(task, index) in tasks" :key="index" class="flex items-center justify-between border-b py-2">
           <span>{{ task }}</span>
-          <button @click="removeTask(index)" class="text-red-500">❌</button>
+          <button @click="removeTask(index)" class="text-red-500 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">❌</button>
         </li>
       </ul>
         </div>
