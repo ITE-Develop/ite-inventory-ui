@@ -5,6 +5,7 @@ import About from "../views/About.vue";
 import AdminBoard from "../views/AdminBoard.vue";
 import Error404 from "../components/Error404.vue";
 import SideBar from "../components/SideBar.vue";
+import BoardComponent from "../layout/MainBoard.vue";
 const routes = [
   {
     path: "/",
@@ -20,6 +21,11 @@ const routes = [
     path: "/sidebar",
     name: "side",
     component: SideBar,
+  },
+  {
+    path: "/component",
+    name: "board",
+    component: BoardComponent,
   },
   {
     path: "/admin",
