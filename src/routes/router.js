@@ -1,21 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 import LoginUser from "../page/Login.vue";
-import ErrorScreen from "../page/Error404.vue";
-import About from "../views/About.vue";
-import AdminBoard from "../views/AdminBoard.vue";
 import Error404 from "../components/Error404.vue";
 import SideBar from "../components/SideBar.vue";
 import BoardComponent from "../layout/MainBoard.vue";
+import Admin from "../page/Admin.vue";
 const routes = [
   {
     path: "/",
     name: "login",
     component: LoginUser,
-  },
-  {
-    path: "/err",
-    name: "error",
-    component: ErrorScreen,
   },
   {
     path: "/sidebar",
@@ -30,20 +23,25 @@ const routes = [
   {
     path: "/admin",
     name: "admin",
-    component: AdminBoard,
+    component: Admin,
+  },
+  // { 
+  //   path: '/', 
+  //   redirect: { name: 'DashboardHome' } 
+  // },
+  { 
+    path: '/dashboard', 
+    component: Dashboard, 
     children: [
-      {
-        path: "/error",
-        name: "error404",
-        component: Error404,
-      },
-    ],
+      { path: '/', redirect: { name: 'DashboardHome' } },
+      { path: 'home', name: 'DashboardHome', component: DashboardHome }
+    ]
   },
   {
-    path: "/about",
-    name: "about",
-    component: About,
-  },
+    path:'/g',
+    redirect: {name: 'admin'},
+    component: Admin,
+  }
 ];
 
 const BASE_URL = "/";
