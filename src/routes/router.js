@@ -3,6 +3,7 @@ import LoginUser from "../page/Login.vue"
 import ErrorScreen from "../page/Error404.vue"
 import TodoAppScreen from "../page/TodoApp.vue"
 import ProductListScreen from "../page/ProductList.vue"
+import ProductTable from '../components/ProductTable.vue'
 const routes = [
   {
     path: '/',
@@ -23,6 +24,11 @@ const routes = [
     path: '/todoapp',
     name: 'TodoApp',
     component: TodoAppScreen
+  },
+  {
+    path: '/product',
+    name: 'ProductTable',
+    component: ProductTable
   },
   {
     path: '/productlist',
