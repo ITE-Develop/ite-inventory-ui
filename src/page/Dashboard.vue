@@ -4,5 +4,5 @@
   </div>
 </template>
 <script setup>
-import DashboardPage from "../components/DashBoard.vue";
+import DashboardPage from "../components/UI/DashboardLayout.vue";
 </script>

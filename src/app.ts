@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import route from './router'
+import App from "./App.vue"
+import route from '../src/routes/router'
 import './assets/main.css'
 
-import DashboardLayout from './components/imports/DashboardLayout.vue'
-import EmptyLayout from './components/imports/EmptyLayout.vue'
+import DashboardLayout from './page/Dashboard.vue'
+import EmptyLayout from './components/UI/EmptyLayout.vue'
 
 const app = createApp(App)
 

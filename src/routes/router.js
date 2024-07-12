@@ -1,58 +1,67 @@
-
-import ErrorScreen from "../page/Error404.vue"
-import TodoAppScreen from "../page/TodoApp.vue"
-import ProductListScreen from "../page/ProductList.vue"
-import ProductTable from '../components/ProductTable.vue'
 import { createRouter, createWebHistory } from "vue-router";
-
-import Error404 from "../components/Error404.vue";
-import SideBar from "../components/SideBar.vue";
-import BoardComponent from "../layout/MainBoard.vue";
-import Admin from "../page/Admin.vue";
+import Login from "../page/Login.vue";
+import Error404 from "../page/Error404.vue";
+import DashBoard from "../page/Dashboard.vue";
+import Home from "../views/Home.vue";
+import Card from "../views/Card.vue";
+import Modal from "../views/Modal.vue";
+import Blank from "../views/Blank.vue";
+import Table from "../views/Tables.vue"
+import Forms from "../views/Forms.vue";
+import UIElements from "../views/UIElements.vue";
 const routes = [
   {
     path: "/",
     name: "login",
-    component: LoginUser,
+    component: Login,
+    meta: { layout: 'emty' },
   },
   {
     path: '/e404',
     name: 'error',
-    component: ErrorScreen
+    component: Error404
   },
   {
-    path: '/todoapp',
-    name: 'TodoApp',
-    component: TodoAppScreen
+    path: "/dashboard",
+    name: "dashboard",
+    component: DashBoard
   },
   {
-    path: '/product',
-    name: 'ProductTable',
-    component: ProductTable
+    path: "/blank",
+    name: 'Blank',
+    component: Blank
   },
   {
-    path: '/productlist',
-    name: 'ProductList',
-    component: ProductListScreen
-  },
-    path: "/sidebar",
-    name: "side",
-    component: SideBar,
+    path: "/home",
+    name: 'Home',
+    component: Home
   },
   {
-    path: "/component",
-    name: "board",
-    component: BoardComponent,
+    path: "/card",
+    name: 'Cards',
+    component: Card
   },
   {
-    path: "/admin",
-    name: "admin",
-    component: Admin,
+    path: "/modal",
+    name: 'Modal',
+    component: Modal
   },
-  // { 
-  //   path: '/', 
-  //   redirect: { name: 'DashboardHome' } 
-  // },
+  {
+    path: "/table",
+    name: 'Tables',
+    component: Table
+  },
+  {
+    path: "/forms",
+    name: 'Forms',
+    component: Forms
+  },
+  {
+    path: "/element",
+    name: 'UIElements',
+    component: UIElements
+  },
+  /*
   { 
     path: '/dashboard', 
     component: Dashboard, 
@@ -61,11 +70,7 @@ const routes = [
       { path: 'home', name: 'DashboardHome', component: DashboardHome }
     ]
   },
-  {
-    path:'/g',
-    redirect: {name: 'admin'},
-    component: Admin,
-  }
+  */
 ];
 
 const BASE_URL = "/";

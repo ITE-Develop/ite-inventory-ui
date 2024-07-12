@@ -1,14 +1,14 @@
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Dashboard from './views/Home.vue'
-import Forms from './views/Forms.vue'
-import Tables from './views/Tables.vue'
-import UIElements from './views/UIElements.vue'
-import Login from './components/UserLogin.vue'
-import Modal from './views/Modal.vue'
-import Card from './views/Card.vue'
-import Blank from './views/Blank.vue'
+import Dashboard from '../views/Home.vue'
+import Forms from '../views/Forms.vue'
+import Tables from '../views/Tables.vue'
+import UIElements from '../views/UIElements.vue'
+import Login from '../components/UI/Login.vue'
+import Modal from '../views/Modal.vue'
+import Card from '../views/Card.vue'
+import Blank from '../views/Blank.vue'
 
 const routes: RouteRecordRaw[] = [
     {

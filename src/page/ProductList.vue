@@ -1,5 +1,5 @@
 <script setup>
-import ProductList from "../components/ProductList.vue";
+import ProductList from "../components/imports/ProductList.vue";
 </script>
 <template>
   <div>

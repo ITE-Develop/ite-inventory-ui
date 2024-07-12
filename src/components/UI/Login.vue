@@ -40,7 +40,7 @@ function login() {
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <img
         class="mx-auto h-10 w-auto"
-        src="../assets/logo/ite_logo.svg"
+        src="../../assets/logo/ite_logo.svg"
         alt="Your Company"
       />
 
