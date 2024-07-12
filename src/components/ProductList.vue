@@ -46,7 +46,7 @@
 
         <div class="box bg-white shadow-lg rounded-lg overflow-hidden">
 
-            <h2 class="text-2xl font-bold mb-4"> Product</h2>
+            <h2 class="text-2xl font-bold mb-4">Product</h2>
             <button @click="addItem"
                 class="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700  flex-nowarp">
                 Add Product
