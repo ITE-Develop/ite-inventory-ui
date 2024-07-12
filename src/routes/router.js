@@ -31,10 +31,7 @@ const routes = [
     component: ModelScreen
   }
 ]
-  // { 
-  //   path: '/', 
-  //   redirect: { name: 'DashboardHome' } 
-  // },
+
  
 const BASE_URL = "/";
 
