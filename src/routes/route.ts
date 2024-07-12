@@ -1,15 +1,16 @@
+import type { RouteRecordRaw } from 'vue-router';
 import { createRouter, createWebHistory } from "vue-router";
 import Login from "../page/Login.vue";
 import Error404 from "../page/Error404.vue";
 import DashBoard from "../page/Dashboard.vue";
-import Home from "../views/Home.vue";
+import HomePage from "../views/Home.vue";
 import Card from "../views/Card.vue";
 import Modal from "../views/Modal.vue";
 import Blank from "../views/Blank.vue";
 import Table from "../views/Tables.vue"
 import Forms from "../views/Forms.vue";
 import UIElements from "../views/UIElements.vue";
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "login",
@@ -19,47 +20,47 @@ const routes = [
   {
     path: '/e404',
     name: 'error',
-    component: Error404
+    component: Error404,
   },
   {
     path: "/dashboard",
     name: "dashboard",
-    component: DashBoard
+    component: DashBoard,
   },
   {
     path: "/blank",
     name: 'Blank',
-    component: Blank
+    component: Blank,
   },
   {
     path: "/home",
     name: 'Home',
-    component: Home
+    component: HomePage,
   },
   {
-    path: "/card",
+    path: "/cards",
     name: 'Cards',
-    component: Card
+    component: Card,
   },
   {
     path: "/modal",
     name: 'Modal',
-    component: Modal
+    component: Modal,
   },
   {
-    path: "/table",
+    path: "/tables",
     name: 'Tables',
-    component: Table
+    component: Table,
   },
   {
     path: "/forms",
     name: 'Forms',
-    component: Forms
+    component: Forms,
   },
   {
-    path: "/element",
+    path: "/ui-elements",
     name: 'UIElements',
-    component: UIElements
+    component: UIElements,
   },
   /*
   { 
@@ -73,10 +74,9 @@ const routes = [
   */
 ];
 
-const BASE_URL = "/";
 
 const router = createRouter({
-  history: createWebHistory(BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

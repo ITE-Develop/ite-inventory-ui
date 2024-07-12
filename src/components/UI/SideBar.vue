@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { useSidebar } from "../../composible/useSidebar";
+import { useSidebar } from "../../composible/useSidebar.ts";
 
 const { isOpen } = useSidebar();
 const activeClass = ref(
@@ -39,8 +39,8 @@ const inactiveClass = ref(
       <nav class="mt-10">
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Home' ? activeClass : inactiveClass]"
-          to="/home"
+          :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass]"
+          to="/dashboard"
         >
           <svg
             class="w-5 h-5"

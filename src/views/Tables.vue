@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTableData } from '../composible/useTableData'
+import { useTableData } from '../composible/useTableData.ts'
 
 const {
   simpleTableData,
