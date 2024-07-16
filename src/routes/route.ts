@@ -7,10 +7,10 @@ import HomePage from "../views/Home.vue";
 import Card from "../views/Card.vue";
 import Modal from "../views/Modal.vue";
 import Blank from "../views/Blank.vue";
-import Table from "../views/Tables.vue"
+import Table from "../views/Tables.vue";
 import Forms from "../views/Forms.vue";
 import UIElements from "../views/UIElements.vue";
-const routes: RouteRecordRaw[] = [
+const routes = [
   {
     path: "/",
     name: "login",

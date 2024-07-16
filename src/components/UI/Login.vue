@@ -19,10 +19,6 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const username = ref("admin");
 const password = ref("ite@admin24");
-
-function login() {
-  router.push("/dashboard");
-}
 </script>
 
 <template>
@@ -52,7 +48,7 @@ function login() {
     </div>
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form class="space-y-6" action="#" method="POST" @submit.prevent="login">
+      <form class="space-y-6" action="#" method="POST">
         <div>
           <label
             for="text"
@@ -101,12 +97,14 @@ function login() {
         </div>
 
         <div>
-          <button
-            type="submit"
-            class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-3 text-lg font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Sign in
-          </button>
+          <router-link to="/admin">
+            <button
+              type="submit"
+              class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-3 text-lg font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Sign in
+            </button>
+          </router-link>
         </div>
       </form>
     </div>
