@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { useSidebar } from "../../composible/useSidebar.ts";
+import { useSidebar } from "../../composible/useSidebar";
 
 const { isOpen } = useSidebar();
 const activeClass = ref(
