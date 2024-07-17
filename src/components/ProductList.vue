@@ -68,7 +68,7 @@
                 <div class="flex justify-between items-center mb-4 ">
                     <h2 class="text-2xl font-bold">Product</h2>
                     <div class="flex px-4 space-x-5  justify-end">
-                        <button @click="addItem"
+                        <button 
                             class="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
                             Add Product
                         </button>
