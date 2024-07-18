@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-const isOpen = ref(false)
+const isOpen = ref(true)
 
 export function useSidebar() {
   return {
