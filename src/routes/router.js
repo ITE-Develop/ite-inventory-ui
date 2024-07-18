@@ -6,8 +6,6 @@ import InventoryScreen from '../components/Inventory.vue'
 import ReportScreen from '../components/Report.vue'
 
 
-
-
 const routes = [
 
   {
