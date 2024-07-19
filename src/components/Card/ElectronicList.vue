@@ -22,7 +22,24 @@
           <td class="border px-4 py-2">{{ item.quantity }}</td>
           <td class="border px-4 py-2">{{ item.user }}</td>
           <td class="border px-4 py-2">{{ item.location }}</td>
-          <td class="border px-4 py-2">{{ item.productImage }}</td>
+          <td class="border px-4 py-2">
+            <img class="h-16 w-16 ml-20" src="../../assets/iMac.png" alt="" />
+          </td>
+          <td class="border px-4 py-2">{{ item.code }}</td>
+          <td class="border px-4 py-2">{{ item.purchaseDate }}</td>
+          <td class="border px-4 py-2">{{ item.availability }}</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr v-for="item in items" :key="item.code">
+          <td class="border px-4 py-2">{{ item.name }}</td>
+          <td class="border px-4 py-2">{{ item.description }}</td>
+          <td class="border px-4 py-2">{{ item.quantity }}</td>
+          <td class="border px-4 py-2">{{ item.user }}</td>
+          <td class="border px-4 py-2">{{ item.location }}</td>
+          <td class="border px-4 py-2">
+            <img class="h-16 w-16 ml-20" src="../../assets/iMac.png" alt="" />
+          </td>
           <td class="border px-4 py-2">{{ item.code }}</td>
           <td class="border px-4 py-2">{{ item.purchaseDate }}</td>
           <td class="border px-4 py-2">{{ item.availability }}</td>
@@ -49,7 +66,6 @@ export default {
           purchaseDate: "11/12/22",
           availability: "In-stock",
         },
-        // Add more items as needed
       ],
     };
   },

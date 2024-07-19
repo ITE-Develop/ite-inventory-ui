@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from "../page/Dashboard.vue"
 import Home from "../layout/Main.vue"
+import Inventory from '../views/InventeryViews.vue'
 import Card from "../views/Card.vue"
-import Login from "../components/UI/Login.vue"
+import Login from "../page/Login.vue"
 import Modal from "../views/Modal.vue";
-import Blank from "../views/Blank.vue";
-import Table from "../views/Tables.vue"
 import Forms from "../views/Forms.vue";
-import UIElements from "../views/UIElements.vue";
+import UserViews from '../views/UserViews.vue'
+import ProductTable from '../components/imports/ProductTable.vue'
 const routes = [
     {
         path: '/dashboard',
@@ -25,14 +25,21 @@ const routes = [
                 component: Card
             },
             {
+                path: '/inventery',
+                name: 'Inventery',
+                component: Inventory,
+                children: [
+                    {
+                        path: '/inventery',
+                        name: 'Inventery',
+                        component: Inventory,
+                    }
+                ]
+            },
+            {
                 path: "/modal",
                 name: 'Modal',
                 component: Modal
-            },
-            {
-                path: "/tables",
-                name: 'Tables',
-                component: Table
             },
             {
                 path: "/forms",
@@ -40,12 +47,16 @@ const routes = [
                 component: Forms
             },
             {
-                path: "/ui-elements",
-                name: 'UIElements',
-                component: UIElements
+                path: "/staff",
+                name: 'User',
+                component: UserViews
             },
-
         ],
+    },
+    {
+        path: '/product',
+        name: 'ProductTable',
+        component: ProductTable
     },
     {
         path: '/',
