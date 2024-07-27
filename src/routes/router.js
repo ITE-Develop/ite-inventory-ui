@@ -4,6 +4,7 @@ import ProductListScreen from "../components/ProductList.vue"
 import ProductTable from '../components/ProductTable.vue'
 import InventoryScreen from '../components/Inventory.vue'
 import ReportScreen from '../components/Report.vue'
+import ModelScreen from '../components/Model.vue'
 
 
 const routes = [
@@ -27,6 +28,11 @@ const routes = [
     path: '/report',
     name: 'Report',
     component: ReportScreen
+  },
+  {
+    path: '/model',
+    name: 'Model',
+    component: ModelScreen
   }
 ]
   // { 
