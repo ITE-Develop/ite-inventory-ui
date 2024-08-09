@@ -1,5 +1,5 @@
 <script setup>
-import Error404 from "../components/Error404.vue";
+import Error404 from "../components/UI/Error404.vue";
 </script>
 <template>
   <div>

@@ -2,7 +2,13 @@
 export default {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      flex: {
+        '6': '6 6 0%',
+        '4': '4 4 0%',
+        '5': '5 5 0%',
+      },
+    },
   },
   plugins: [],
 }
