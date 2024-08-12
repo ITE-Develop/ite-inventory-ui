@@ -51,7 +51,7 @@
       <div class="flex justify-evenly">
         <div>
           <img
-            src="../../assets/image/IMG_6875.PNG"
+            src="../../assets/image/profile_user.png"
             class="bg-white p-6 rounded-lg shadow-lg w-24 h-24"
           />
           <p class="text-lg font-semibold text-center">31</p>
@@ -120,7 +120,7 @@
       <div class="flex justify-evenly">
         <div>
           <img
-            src="../../assets/image/IMG_6875.PNG"
+            src="../../assets/image/profile_user.png"
             class="bg-white p-6 rounded-lg shadow-lg w-24 h-24"
           />
           <p class="text-lg font-semibold text-center">31</p>
