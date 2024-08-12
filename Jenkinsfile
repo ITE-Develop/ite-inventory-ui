@@ -1,17 +1,20 @@
 pipeline {
-    agent any
+    agent {
+        dokcer {image 'node:20.16.0-alpine3.20'}
+    }
 
     stages {
-        stage('Clone repository') {
+        
+        stage('Container') {
             steps {
-                echo "Starting"
+                sh 'node --version'
             }
         }
 
         stage('Build Docker Image') {
             steps {
                 script {
-                    echo "seting project"
+                    sh 'ls -a'
                 }
             }
         }
