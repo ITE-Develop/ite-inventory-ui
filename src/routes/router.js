@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import ProductListScreen from "../components/ProductList.vue"
-import ProductTable from '../components/ProductTable.vue'
+//import ProductTable from '../components/ProductTable.vue'
 import InventoryScreen from '../components/Inventory.vue'
 import ReportScreen from '../components/Report.vue'
 import ModelScreen from '../components/Model.vue'
@@ -9,11 +9,7 @@ import ModelScreen from '../components/Model.vue'
 
 const routes = [
 
-  {
-    path: '/product',
-    name: 'ProductTable',
-    component: ProductTable
-  },
+
   {
     path: '/productlist',
     name: 'ProductList',
