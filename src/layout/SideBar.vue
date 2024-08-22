@@ -1,10 +1,6 @@
 <script setup>
 import { ref } from "vue";
-<<<<<<< HEAD:src/layout/SideBar.vue
-import { useSidebar } from "../composible/useSidebar";
-=======
-import { useSidebar } from "../../composible/useSidebar.ts";
->>>>>>> 41bd735 (modefi):src/components/UI/SideBar.vue
+import { useSidebar } from "../components/compisible/useSidebar.js";
 
 const { isOpen } = useSidebar();
 const activeClass = ref(
