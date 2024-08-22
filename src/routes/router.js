@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import{ createRouter, createWebHistory } from 'vue-router'
 import Dashboard from "../page/Dashboard.vue"
 import Home from "../layout/Main.vue"
 import Inventory from '../views/InventeryViews.vue'

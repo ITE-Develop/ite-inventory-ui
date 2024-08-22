@@ -1,3 +1,6 @@
+<script setup>
+import User from "../components/UI/User.vue"
+</script>
 <template>
-    <div></div>
+    <User />
 </template>
