@@ -67,8 +67,8 @@ const inactiveClass = ref(
 
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'UIElements' ? activeClass : inactiveClass]"
-          to="/ui-elements"
+          :class="[$route.name === 'Inventery' ? activeClass : inactiveClass]"
+          to="/inventery"
         >
           <svg
             class="w-5 h-5"
@@ -94,7 +94,7 @@ const inactiveClass = ref(
             />
           </svg>
 
-          <span class="mx-4">UI Elements</span>
+          <span class="mx-4">Inventory</span>
         </router-link>
 
         <router-link
@@ -203,6 +203,19 @@ const inactiveClass = ref(
           </svg>
 
           <span class="mx-4">Blank</span>
+        </router-link>
+        <router-link
+          class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
+          :class="[$route.name === 'User' ? activeClass : inactiveClass]"
+          to="/staff"
+        >
+        <img class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" src="../assets/image/9187604.png" alt="">
+          <!-- <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+            />
+          </svg> -->
+          <span class="mx-4">User</span>
         </router-link>
       </nav>
     </div>
