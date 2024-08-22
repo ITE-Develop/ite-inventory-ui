@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # file ignore 
-../src/routes/router.js
+../../src/routes/router.js
