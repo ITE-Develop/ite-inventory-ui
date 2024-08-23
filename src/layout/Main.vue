@@ -1,6 +1,6 @@
 <script setup>
 import MainPage from "../page/Home.vue";
-import CardDashboard from "../components/imports/ProductTable.vue"
+import CardDashboard from "../components/UI/ProductTable.vue"
 </script>
 <template>
   <div>

@@ -7,7 +7,8 @@ import Login from "../page/Login.vue"
 import Modal from "../views/Modal.vue";
 import Forms from "../views/Forms.vue";
 import UserViews from '../views/UserViews.vue'
-import ProductTable from '../components/imports/ProductTable.vue'
+import Report from "../components/UI/Report.vue";
+import Model from "../components/UI/Model.vue";
 const routes = [
     {
         path: '/dashboard',
@@ -54,14 +55,14 @@ const routes = [
         ],
     },
     {
-        path: '/product',
-        name: 'ProductTable',
-        component: ProductTable
-    },
-    {
         path: '/',
         name: 'login',
         component: Login,
+    },
+    {
+        path: '/model',
+        name: 'model',
+        component: Model,
     },
 ]
 

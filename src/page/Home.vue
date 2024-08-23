@@ -1,5 +1,5 @@
 <script setup>
-import PageHome from "../components/Card/ElectronicList.vue";
+import PageHome from "../components/UI/ElectronicList.vue";
 </script>
 <template>
   <div>

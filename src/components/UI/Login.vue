@@ -12,7 +12,8 @@
   }
   ```
 -->
-<script setup lang="ts">
+<script setup>
+import iteLogo from "../../assets/logo/ite_logo.svg"
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
@@ -22,21 +23,13 @@ const password = ref("ite@admin24");
 </script>
 
 <template>
-  <!--
-      This example requires updating your template:
-  
-      ```
-      <html class="h-full bg-white">
-      <body class="h-full">
-      ```
-    -->
   <div
     class="m-52 flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <img
         class="mx-auto h-10 w-auto"
-        src="../../assets/logo/ite_logo.svg"
+        :src="iteLogo"
         alt="Your Company"
       />
 

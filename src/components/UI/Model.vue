@@ -9,7 +9,7 @@
                 <div class="flex justify-center mt-5 space-x-8">
                    
                   <div class="flex px-4 space-x-5"> 
-                    <img src="../assets/iMac.png" class="max-w-xs h-16 rounded-lg shadow-lg">
+                    <img src="../../assets/iMac.png" class="max-w-xs h-16 rounded-lg shadow-lg">
                 </div>
                 <div class="mt-2 space-y-2">
                         <div class="flex px-4 space-x-8">

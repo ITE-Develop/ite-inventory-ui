@@ -96,8 +96,8 @@
           <th class="border border-slate-300 py-2 text-center">
             Products Name
           </th>
-          <th class="border border-slate-300 py-2 text-center">
-            Description/Specification (Include Serial/Model No.)
+          <th class="border border-slate-300 py-2 text-center w-96">
+            Description-(Serial/Model No.)
           </th>
           <th class="border border-slate-300 py-2 text-center">Purchase</th>
           <th class="border border-slate-300 py-2 text-center">Quantity</th>
@@ -145,8 +145,4 @@
       </tbody>
     </table>
   </div>
-  <div></div>
 </template>
-
-<script>
-</script>
