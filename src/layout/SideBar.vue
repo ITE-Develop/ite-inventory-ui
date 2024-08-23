@@ -198,7 +198,7 @@ const inactiveClass = ref(
             />
           </svg>
 
-          <span class="mx-4">Blank</span>
+          <span class="mx-4">ចំណាយ</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"

@@ -6,9 +6,9 @@ import Card from "../views/Card.vue"
 import Login from "../page/Login.vue"
 import Modal from "../views/Modal.vue";
 import Forms from "../views/Forms.vue";
+import Table from "../page/Table.vue";
+import RequestNote from "../page/RequestNote.vue";
 import UserViews from '../views/UserViews.vue'
-import Report from "../components/UI/Report.vue";
-import Model from "../components/UI/Model.vue";
 const routes = [
     {
         path: '/dashboard',
@@ -43,6 +43,11 @@ const routes = [
                 component: Modal
             },
             {
+                path: "/tables",
+                name: 'Tables',
+                component: Table
+            },
+            {
                 path: "/forms",
                 name: 'Forms',
                 component: Forms
@@ -52,17 +57,17 @@ const routes = [
                 name: 'User',
                 component: UserViews
             },
+            {
+                path: '/blank',
+                name: 'blank',
+                component: RequestNote,
+            },
         ],
     },
     {
         path: '/',
         name: 'login',
         component: Login,
-    },
-    {
-        path: '/model',
-        name: 'model',
-        component: Model,
     },
 ]
 
